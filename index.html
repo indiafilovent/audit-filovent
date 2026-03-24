@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audit Conciergerie Filovent – 30 jours complets</title>
+<style>
+:root{--primary:#1a2e4a;--accent:#0e7fdb;--accent2:#f0a500;--danger:#d94f4f;--success:#2ecc71;--bg:#f5f7fa;--card:#ffffff;--text:#2d3748;--muted:#718096;--border:#e2e8f0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+header{background:linear-gradient(135deg,#1a2e4a 0%,#0e4d8a 100%);color:white;padding:48px 40px 36px}
+header h1{font-size:2rem;font-weight:700;margin-bottom:8px}
+header p{opacity:.82;font-size:1rem;max-width:720px}
+.badge{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:4px 14px;font-size:.82rem;margin-top:14px;margin-right:6px}
+.container{max-width:1100px;margin:0 auto;padding:40px 24px}
+section{margin-bottom:52px}
+h2{font-size:1.35rem;font-weight:700;color:var(--primary);border-left:4px solid var(--accent);padding-left:14px;margin-bottom:22px}
+h3{font-size:1.05rem;font-weight:600;color:var(--primary);margin-bottom:10px}
+.grid4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:700px){.grid2,.grid4{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:22px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.card-accent{border-top:3px solid var(--accent)}
+.stat-big{font-size:2.4rem;font-weight:800;color:var(--accent)}
+.stat-label{font-size:.85rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
+.stat-sub{font-size:.78rem;color:var(--muted);margin-top:4px}
+.bar-wrap{margin-top:8px}
+.bar-label{display:flex;justify-content:space-between;font-size:.87rem;margin-bottom:4px}
+.bar{background:var(--border);border-radius:6px;height:10px}
+.bar-fill{height:10px;border-radius:6px;background:var(--accent)}
+.bar-fill.warn{background:var(--accent2)}
+.bar-fill.danger{background:var(--danger)}
+.pill{display:inline-block;padding:2px 10px;border-radius:12px;font-size:.78rem;font-weight:600}
+.pill-high{background:#fde8e8;color:#c0392b}
+.pill-medium{background:#fff3cd;color:#856404}
+.pill-low{background:#e6f7ee;color:#1a7a3f}
+.notice-box{background:#eef6ff;border:1px solid #bee3f8;border-radius:10px;padding:14px 20px;font-size:.91rem;color:#2b6cb0;margin-bottom:28px}
+.compare-header{background:linear-gradient(90deg,#e8f4fd 0%,#fff3cd 100%);border:1px solid #bee3f8;border-radius:10px;padding:14px 20px;margin-bottom:18px;font-size:.91rem}
+.ct{width:100%;border-collapse:collapse;font-size:.88rem;margin-top:10px}
+.ct th{padding:9px 12px;text-align:left;font-weight:600}
+.ct th:first-child{background:#1a2e4a;color:white}
+.ct th:nth-child(2){background:#0e7fdb;color:white}
+.ct th:nth-child(3){background:#f0a500;color:white}
+.ct th:last-child{background:#2ecc71;color:white}
+.ct td{padding:9px 12px;border-bottom:1px solid var(--border)}
+.period-7{color:#0e7fdb;font-weight:600}
+.period-30{color:#c05c00;font-weight:600}
+.period-total{color:#1a7a3f;font-weight:600}
+.trend-up{color:#d94f4f;font-size:.8rem}
+.trend-stable{color:#856404;font-size:.8rem}
+.trend-down{color:#2ecc71;font-size:.8rem}
+.section-intro{color:var(--muted);font-size:.93rem;margin-bottom:18px;max-width:800px}
+.callout-blue{background:#f0f7ff;border-left:4px solid var(--accent);border-radius:0 8px 8px 0;padding:14px 18px;margin:16px 0;font-size:.92rem}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th{background:#f0f4f8;font-weight:600;text-align:left;padding:10px 14px;color:var(--primary);border-bottom:2px solid var(--border)}
+td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:top}
+tr:hover td{background:#f9fbfd}
+footer{background:var(--primary);color:rgba(255,255,255,.65);text-align:center;padding:28px;font-size:.85rem;margin-top:40px}
+</style>
+</head>
+<body>
+<header>
+<h1>🧭 Audit Opérationnel — Conciergerie Filovent</h1>
+<p>Analyse factuelle et structurée consolidée sur 30 jours complets. Fusion des deux analyses (7 derniers jours + J-30 à J-8).</p>
+<span class="badge">📧 ~1 319 tickets — 30 jours complets</span>
+<span class="badge">📅 Période : 22 Fév → 24 Mars 2026</span>
+<span class="badge">🗂️ Zoho Desk – concierge@filovent.com</span>
+<span class="badge">📊 Audit consolidé : 24/03/2026</span>
+<span class="badge">🔀 Fusion J-7 (351) + J-30àJ-8 (~968)</span>
+</header>
+<div class="container">
+<div class="notice-box">ℹ️ <strong>Méthodologie :</strong> Fusion de deux analyses. <span class="period-7">Période A = 7 derniers jours (351 tickets)</span>. <span class="period-30">Période B = J-30 à J-8 (~968 tickets)</span>. Total : <span class="period-total">~1 319 tickets sur 30 jours</span>.</div>
+<section>
+<h2>🧭 1. Vue d'ensemble — 30 jours consolidés</h2>
+<div class="grid4" style="margin-bottom:22px">
+<div class="card card-accent" style="text-align:center"><div class="stat-big">~1 319</div><div class="stat-label">Tickets — 30 jours</div><div class="stat-sub">351 (J-7) + ~968 (J-30 à J-8)</div></div>
+<div class="card card-accent" style="text-align:center"><div class="stat-big">~7,6</div><div class="stat-label">Messages / ticket</div><div class="stat-sub">8,4 sur J-7 · 7,2 sur J-30àJ-8</div></div>
+<div class="card card-accent" style="text-align:center"><div class="stat-big">~44</div><div class="stat-label">Tickets / jour</div><div class="stat-sub">~50/j sur J-7 · ~42/j sur J-30àJ-8</div></div>
+<div class="card card-accent" style="text-align:center"><div class="stat-big">~95%</div><div class="stat-label">Tickets clôturés</div><div class="stat-sub">92% sur J-7 · 97% sur J-30àJ-8</div></div>
+</div>
+<div class="card" style="margin-bottom:22px">
+<h3>🔀 Comparaison directe des deux périodes</h3>
+<div class="compare-header"><span class="period-7">■ Bleu = 7 derniers jours</span> | <span class="period-30">■ Orange = J-30 à J-8</span> | <span class="period-total">■ Vert = consolidé 30 jours</span></div>
+<table class="ct"><thead><tr><th>Indicateur</th><th>7 derniers jours</th><th>J-30 à J-8</th><th>30 jours consolidé</th></tr></thead>
+<tbody>
+<tr><td>Volume de tickets</td><td class="period-7">351</td><td class="period-30">~968</td><td class="period-total">~1 319</td></tr>
+<tr><td>Moy. messages / ticket</td><td class="period-7">~8,4</td><td class="period-30">~7,2</td><td class="period-total">~7,6</td></tr>
+<tr><td>Tickets clôturés</td><td class="period-7">92%</td><td class="period-30">~97%</td><td class="period-total">~95%</td></tr>
+<tr><td>Tickets urgents</td><td class="period-7">~8%</td><td class="period-30">~6%</td><td class="period-total">~7%</td></tr>
+<tr><td>Tickets multi-sujets</td><td class="period-7">~38%</td><td class="period-30">~35%</td><td class="period-total">~36%</td></tr>
+<tr><td>Nécessitant relance</td><td class="period-7">~45%</td><td class="period-30">~43%</td><td class="period-total">~44%</td></tr>
+<tr><td>Impliquant partenaire</td><td class="period-7">~30%</td><td class="period-30">~32%</td><td class="period-total">~31%</td></tr>
+<tr><td>Tension / insatisfaction</td><td class="period-7">~11%</td><td class="period-30">~13%</td><td class="period-total">~12%</td></tr>
+<tr><td>Multilingue (hors FR)</td><td class="period-7">~15%</td><td class="period-30">~18%</td><td class="period-total">~17%</td></tr>
+</tbody></table>
+</div>
+<div class="grid2">
+<div class="card">
+<h3>🏆 Top types d'emails — 30 jours</h3>
+<div class="bar-wrap"><div class="bar-label"><span>Préparation &amp; finalisation croisière</span><span>~30%</span></div><div class="bar"><div class="bar-fill" style="width:30%"></div></div></div>
+<div class="bar-wrap"><div class="bar-label"><span>Documents administratifs</span><span>~21%</span></div><div class="bar"><div class="bar-fill" style="width:21%"></div></div></div>
+<div class="bar-wrap"><div class="bar-label"><span>Coordination partenaires / loueurs</span><span>~15%</span></div><div class="bar"><div class="bar-fill warn" style="width:15%"></div></div></div>
+<div class="bar-wrap"><div class="bar-label"><span>Modifications réservation &amp; vols</span><span>~13%</span></div><div class="bar"><div class="bar-fill warn" style="width:13%"></div></div></div>
+<div class="bar-wrap"><div class="bar-label"><span>Réclamations, litiges &amp; remboursements</span><span>~10%</span></div><div class="bar"><div class="bar-fill danger" style="width:10%"></div></div></div>
+<div class="bar-wrap"><div class="bar-label"><span>Assurances</span><span>~5%</span></div><div class="bar"><div class="bar-fill warn" style="width:5%"></div></div></div>
+<div class="bar-wrap"><div class="bar-label"><span>Paiements &amp; facturation</span><span>~5%</span></div><div class="bar"><div class="bar-fill warn" style="width:5%"></div></div></div>
+</div>
+<div class="card">
+<h3>⚠️ Top problèmes récurrents — 30 jours</h3>
+<div class="bar-wrap"><div class="bar-label"><span>Documents manquants / transmis tardivement</span><span>Élevé</span></div><div class="bar"><div class="bar-fill danger" style="width:85%"></div></div></div>
+<div class="bar-wrap"><div class="bar-label"><span>Ambiguïté sur les transferts inclus</span><span>Élevé</span></div><div class="bar"><div class="bar-fill danger" style="width:78%"></div></div></div>
+<div class="bar-wrap"><div class="bar-label"><span>Attente retour partenaire / loueur</span><span>Élevé</span></div><div class="bar"><div class="bar-fill danger" style="width:72%"></div></div></div>
+<div class="bar-wrap"><div class="bar-label"><span>Modifications de vols (schedule change)</span><span>Élevé</span></div><div class="bar"><div class="bar-fill danger" style="width:68%"></div></div></div>
+<div class="bar-wrap"><div class="bar-label"><span>Réclamations sur qualité des prestations</span><span>Moyen-Élevé</span></div><div class="bar"><div class="bar-fill warn" style="width:58%"></div></div></div>
+<div class="bar-wrap"><div class="bar-label"><span>Contexte géopolitique / force majeure</span><span>Moyen</span></div><div class="bar"><div class="bar-fill warn" style="width:45%"></div></div></div>
+<div class="bar-wrap"><div class="bar-label"><span>Paiements &amp; virements problématiques</span><span>Moyen</span></div><div class="bar"><div class="bar-fill warn" style="width:38%"></div></div></div>
+</div>
+</div>
+</section>
+<section>
+<h2>📂 2. Catégories d'emails — 30 jours</h2>
+<p class="section-intro">Répartition consolidée issue des deux périodes.</p>
+<table><thead><tr><th>Catégorie</th><th>% J-7</th><th>% J-30àJ-8</th><th>% 30j global</th><th>Tendance</th></tr></thead>
+<tbody>
+<tr><td><strong>Préparation &amp; finalisation croisière</strong></td><td><span class="pill pill-high">~31%</span></td><td><span class="pill pill-high">~29%</span></td><td><span class="pill pill-high">~30%</span></td><td><span class="trend-stable">≈ stable</span></td></tr>
+<tr><td><strong>Documents administratifs</strong></td><td><span class="pill pill-high">~22%</span></td><td><span class="pill pill-high">~21%</span></td><td><span class="pill pill-high">~21%</span></td><td><span class="trend-stable">≈ stable</span></td></tr>
+<tr><td><strong>Coordination partenaires / loueurs</strong></td><td><span class="pill pill-medium">~10%</span></td><td><span class="pill pill-high">~17%</span></td><td><span class="pill pill-medium">~15%</span></td><td><span class="trend-up">↑ plus visible J-30àJ-8</span></td></tr>
+<tr><td><strong>Modifications de réservation &amp; vols</strong></td><td><span class="pill pill-medium">~14%</span></td><td><span class="pill pill-medium">~13%</span></td><td><span class="pill pill-medium">~13%</span></td><td><span class="trend-stable">≈ stable</span></td></tr>
+<tr><td><strong>Réclamations &amp; litiges</strong></td><td><span class="pill pill-medium">~9%</span></td><td><span class="pill pill-high">~10%</span></td><td><span class="pill pill-high">~10%</span></td><td><span class="trend-up">↑ en volume absolu</span></td></tr>
+<tr><td><strong>Assurances</strong></td><td><span class="pill pill-low">~3%</span></td><td><span class="pill pill-medium">~6%</span></td><td><span class="pill pill-medium">~5%</span></td><td><span class="trend-up">↑ plus visible sur période longue</span></td></tr>
+<tr><td><strong>Avitaillement &amp; extras</strong></td><td><span class="pill pill-medium">~7%</span></td><td><span class="pill pill-medium">~5%</span></td><td><span class="pill pill-medium">~6%</span></td><td><span class="trend-stable">≈ stable</span></td></tr>
+<tr><td><strong>Informations pratiques &amp; logistiques</strong></td><td><span class="pill pill-medium">~6%</span></td><td><span class="pill pill-medium">~5%</span></td><td><span class="pill pill-medium">~5%</span></td><td><span class="trend-stable">≈ stable</span></td></tr>
+<tr><td><strong>Paiements &amp; facturation</strong></td><td><span class="pill pill-low">~3%</span></td><td><span class="pill pill-medium">~5%</span></td><td><span class="pill pill-medium">~5%</span></td><td><span class="trend-up">↑ plus visible sur période longue</span></td></tr>
+<tr><td><strong>Contexte géopolitique / force majeure</strong></td><td><span class="pill pill-medium">~5%</span></td><td><span class="pill pill-medium">~4%</span></td><td><span class="pill pill-medium">~4%</span></td><td><span class="trend-stable">≈ stable</span></td></tr>
+<tr><td><strong>Contrats &amp; accords commerciaux</strong></td><td><span class="pill pill-low">~2%</span></td><td><span class="pill pill-medium">~4%</span></td><td><span class="pill pill-medium">~3%</span></td><td><span class="trend-up">↑ sur période longue</span></td></tr>
+<tr><td><strong>Feedback &amp; retours croisière</strong></td><td><span class="pill pill-low">~2%</span></td><td><span class="pill pill-low">~2%</span></td><td><span class="pill pill-low">~2%</span></td><td><span class="trend-stable">≈ stable</span></td></tr>
+<tr><td><strong>Spam, pub &amp; divers</strong></td><td><span class="pill pill-low">~4%</span></td><td><span class="pill pill-low">~3%</span></td><td><span class="pill pill-low">~3%</span></td><td><span class="trend-down">↓ légèrement</span></td></tr>
+</tbody></table>
+</section>
+<section>
+<h2>🔁 3. Fonctionnement des conversations — 30 jours</h2>
+<p class="section-intro">Analyse consolidée de la dynamique des échanges.</p>
+<div class="card" style="margin-bottom:22px">
+<h3>📊 Volume d'échanges — comparé</h3>
+<table class="ct" style="margin-top:8px"><thead><tr><th>Indicateur</th><th>J-7</th><th>J-30àJ-8</th><th>30j global</th></tr></thead>
+<tbody>
+<tr><td>Moy. messages / ticket</td><td class="period-7">~8,4</td><td class="period-30">~7,2</td><td class="period-total">~7,6</td></tr>
+<tr><td>Tickets courts (1–3 msg)</td><td class="period-7">~35%</td><td class="period-30">~38%</td><td class="period-total">~37%</td></tr>
+<tr><td>Tickets moyens (4–10 msg)</td><td class="period-7">~40%</td><td class="period-30">~38%</td><td class="period-total">~39%</td></tr>
+<tr><td>Tickets longs (11–30 msg)</td><td class="period-7">~18%</td><td class="period-30">~17%</td><td class="period-total">~17%</td></tr>
+<tr><td>Tickets très longs (30+ msg)</td><td class="period-7">~7%</td><td class="period-30">~7%</td><td class="period-total">~7%</td></tr>
+</tbody></table>
+</div>
+<div class="callout-blue">ℹ️ <strong>Note :</strong> Le code source original fourni était incomplet. Ce rapport présente l'intégralité du contenu disponible. Vous pouvez mettre à jour le fichier index.html sur GitHub pour ajouter les sections manquantes.</div>
+</section>
+</div>
+<footer>Audit Opérationnel Conciergerie Filovent — Période 22 Fév → 24 Mars 2026 — ~1 319 tickets analysés — Confidentiel</footer>
+</body>
+</html>
